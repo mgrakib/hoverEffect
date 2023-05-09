@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.black_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    
+}
+
+
+.container a.mobile {
+    /* z-index: 1; */
+    transform: translateX(120px);
+}
+
+.container a {
+    display: block;
+    width: 170px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    
+    cursor: pointer;
+    outline: 0;
+}
+
+.link_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transform: translateX(120px);
+    transition: all .5s ease-in-out;
+}
+
+.link_img img {
+    width: 60%;
+    height: auto;
+}
+
+.container a span{
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 122px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    color: white;
+    background-color: black;
+    transform: translateX(120px);
+    transition: all .5s ease-in-out;
+
+}
+/* .container a:hover span{
+    
+    transform: translateX(0);
+}
+
+
+a:hover .link_img {
+    transform: translateX(0); 
+}
+
+a.mail:hover~a .link_img{
+    transform: translateX(0);
+    
+} */
+ a:hover .link_img,  a:hover span, a.mail:hover~a.mobile {
+    transform: translateX(0);
+}
+
+
+
