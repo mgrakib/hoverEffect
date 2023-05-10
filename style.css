@@ -14,9 +14,8 @@ body {
 }
 
 a {
-    display: block;
-    text-decoration: none;
-    
+	display: block;
+	text-decoration: none;
 }
 /* main container  */
 .container {
@@ -28,19 +27,19 @@ a {
 /* overflow  */
 .item-container {
 	overflow: hidden;
-    position: relative;
-    transition: all .5s ease-in-out;
+	position: relative;
+	transition: all 0.5s ease-in-out;
 }
 .phone {
-    left: 215px;
+	left: 67px;
 }
 
 .flex_container {
 	display: flex;
 	align-items: center;
-    position: relative;
-    left: calc(100% - 50px);
-    transition: all .5s ease-in-out;
+	position: relative;
+	left: calc(100% - 50px);
+	transition: all 0.5s ease-in-out;
 }
 
 .img-container {
@@ -61,17 +60,20 @@ a {
 	display: flex;
 	align-items: center;
 	padding: 0 10px;
+	font-size: 13px;
 }
 
-.item-container:hover .flex_container{
-    left: 0;
-} 
-
-div.mail:hover~div.phone{
-    left: 0;
+.item-container:hover .flex_container {
+	left: 0;
 }
 
- /* a:hover .link_img,  a:hover span, a.mail:hover~a.mobile {
+div.mail:hover ~ div.phone {
+	left: 0;
+}
+
+
+
+/* a:hover .link_img,  a:hover span, a.mail:hover~a.mobile {
     transform: translateX(0);
 } */
 
