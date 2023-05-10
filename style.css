@@ -1,16 +1,76 @@
-body{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+/** @format */
+
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
+/* main container  */
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+/* overflow  */
+.item-container {
+	overflow: hidden;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+.phone {
+    left: 210px;
+}
+
+.flex_container {
+	display: flex;
+	align-items: center;
+    position: relative;
+    left: calc(100% - 50px);
+    transition: all .5s ease-in-out;
+}
+
+.img-container {
+	width: 50px;
+	height: 50px;
+	background-color: black;
+	padding: 10px;
+}
+.img-container img {
+	width: 100%;
+}
+
+.item-container span {
+	background-color: black;
+	color: wheat;
+	display: inline-block;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+}
+
+.item-container:hover .flex_container{
+    left: 0;
+} 
+
+div.mail:hover~div.phone{
+    left: 0;
+}
+
+ /* a:hover .link_img,  a:hover span, a.mail:hover~a.mobile {
+    transform: translateX(0);
+} */
+
+/*
 .black_container {
     display: flex;
     align-items: center;
@@ -20,12 +80,12 @@ body{
 
 
 .container a.mobile {
-    /* z-index: 1; */
+   z-index: 1; 
     transform: translateX(120px);
 }
 
-.container a {
-    display: block;
+.container a.mobile {
+   
     width: 170px;
     position: relative;
     text-decoration: none;
@@ -35,8 +95,29 @@ body{
     cursor: pointer;
     outline: 0;
 }
+.container a.mail {
+    display: block;
+    width: 270px;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    
+    cursor: pointer;
+    outline: 0;
+}
 
-.link_img {
+.mail .link_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    transform: translateX(220px);
+    transition: all .5s ease-in-out;
+}
+.mobile .link_img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,7 +137,7 @@ body{
     position: absolute;
     left: 50px;
     top: 0;
-    width: 122px;
+    width: 120px;
     height: 50px;
     display: flex;
     align-items: center;
@@ -67,23 +148,10 @@ body{
     transition: all .5s ease-in-out;
 
 }
-/* .container a:hover span{
-    
-    transform: translateX(0);
-}
 
-
-a:hover .link_img {
-    transform: translateX(0); 
-}
-
-a.mail:hover~a .link_img{
-    transform: translateX(0);
-    
-} */
  a:hover .link_img,  a:hover span, a.mail:hover~a.mobile {
     transform: translateX(0);
 }
 
 
-
+ */
